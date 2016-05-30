@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RecordMoving : MonoBehaviour {
+public class RecordMoving : MonoBehaviour
+{
 
 	// Use this for initialization
 	void Start () {

@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MoveObject : MonoBehaviour
-{
+public class TxtObjectMove : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
