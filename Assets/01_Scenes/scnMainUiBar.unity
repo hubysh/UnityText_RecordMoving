@@ -346,11 +346,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -252
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -154
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_SizeDelta.x
@@ -512,7 +512,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1507590590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa93b6e7e209f64bb0ce8dc1933d8bb, type: 3}
+  m_Script: {fileID: 11500000, guid: 79cbdf0e295691f40ba502e546827254, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1507590593
