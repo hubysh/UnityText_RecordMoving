@@ -94,7 +94,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22469750, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -179,7 +179,7 @@ Prefab:
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 813722188}
+      objectReference: {fileID: 0}
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SendMessage
@@ -199,6 +199,10 @@ Prefab:
     - target: {fileID: 11471466, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_Text
       value: Record
+      objectReference: {fileID: 0}
+    - target: {fileID: 121804, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
+      propertyPath: m_Name
+      value: btnRecord
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11470474, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
@@ -346,15 +350,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 126
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 370
+      value: 240
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 136
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 22468478, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
       propertyPath: m_AnchorMin.x
@@ -380,24 +384,17 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 126050, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
+      propertyPath: m_Name
+      value: txtObject
+      objectReference: {fileID: 0}
+    - target: {fileID: 11431882, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
+      propertyPath: m_Text
+      value: Object
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &813722187 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 121804, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
-  m_PrefabInternal: {fileID: 98107201}
---- !u!114 &813722188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 813722187}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a7a1ce3002b2048a9a21f52670bd1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &950087109 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22469750, guid: 004d95168958bc345bbfe012c183acb5,
@@ -480,9 +477,8 @@ GameObject:
   - 222: {fileID: 1507590595}
   - 114: {fileID: 1507590594}
   - 114: {fileID: 1507590593}
-  - 114: {fileID: 1507590592}
   m_Layer: 5
-  m_Name: btnTestSingleton (2)
+  m_Name: btnMove
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -507,17 +503,6 @@ RectTransform:
   m_AnchoredPosition: {x: -133, y: 0.000061035156}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1507590592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1507590590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a7a1ce3002b2048a9a21f52670bd1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1507590593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -557,18 +542,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1507590594}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1507590592}
-        m_MethodName: SendMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TestSingletonScript
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1507590594
@@ -720,7 +694,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Load
+  m_Text: Save
 --- !u!222 &1725275234
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -815,7 +789,6 @@ GameObject:
   - 222: {fileID: 2101853606}
   - 114: {fileID: 2101853605}
   - 114: {fileID: 2101853604}
-  - 114: {fileID: 2101853603}
   m_Layer: 5
   m_Name: btnSave
   m_TagString: Untagged
@@ -842,17 +815,6 @@ RectTransform:
   m_AnchoredPosition: {x: 135, y: 0.000061035156}
   m_SizeDelta: {x: 120, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2101853603
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2101853601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54a7a1ce3002b2048a9a21f52670bd1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2101853604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -892,18 +854,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2101853605}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2101853603}
-        m_MethodName: SendMessage
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TestSingletonScript
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2101853605
