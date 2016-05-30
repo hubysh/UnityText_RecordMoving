@@ -13,6 +13,7 @@ public class Singleton : MonoBehaviour
 	private static Singleton instance = null;
 
 	public GameObject txtObject;
+	public List<TxtObjectMovement> lstObjectMovement = new List<TxtObjectMovement>();
 
 	public static Singleton Instance
 	{
@@ -30,6 +31,7 @@ public class Singleton : MonoBehaviour
 	void Awake()
 	{
 		txtObject = GameObject.Find("txtObject");
+
 	}
 
 }
