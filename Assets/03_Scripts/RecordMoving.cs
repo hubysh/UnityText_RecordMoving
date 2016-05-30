@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
 using System.Collections.Generic;
 
 public class RecordMoving : MonoBehaviour
@@ -13,25 +12,31 @@ public class RecordMoving : MonoBehaviour
 	
 	void Awake()
 	{
-
-	
 		lstObjectMovement = new List<TxtObjectMovement>();
 		tempObjectMovement = new TxtObjectMovement();
 
 		recording = false;
 	}
 
-	void Update()
+	void FixedUpdate()
 	{
+		int cnt = 0;
 		if (recording)
 		{
+			// 오브젝트 시쿼스 및 순간 위치 저장
+			tempObjectMovement.sequence = cnt;
 			tempObjectMovement.pos = Singleton.Instance.txtObject.transform.position;
+			tempObjectMovement.rot = Singleton.Instance.txtObject.transform.rotation;
 
+			// 리스트에 순간 위치 추가
 			lstObjectMovement.Add(tempObjectMovement);
+			
 
 			Debug.Log(tempObjectMovement.pos.ToString());
+			Debug.Log(lstObjectMovement.Count.ToString());
 
-
+			// sequence 증가
+			cnt++;
 		}
 	}
 
@@ -43,6 +48,11 @@ public class RecordMoving : MonoBehaviour
 	void StopRecording()
 	{
 		recording = false;
+	}
+
+	void SaveList()
+	{
+
 	}
 
 
