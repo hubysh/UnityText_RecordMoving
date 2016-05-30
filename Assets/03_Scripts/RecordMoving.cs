@@ -70,14 +70,14 @@ public class RecordMoving : MonoBehaviour
 		// 움직임 기록 xml 파일
 		XmlDocument xmlMovements = new XmlDocument();
 
+		// 최상위 요소 생성
 		XmlElement lv1Main = xmlMovements.CreateElement("Main");
 		xmlMovements.AppendChild(lv1Main);
 
+		// 하위 요소 생성
 		foreach (TxtObjectMovement src in Singleton.Instance.lstObjectMovement)
 		{
-			Debug.Log("foreach");
 			XmlElement lv2Sequence = xmlMovements.CreateElement("S" + src.sequence.ToString());
-			//lv2Sequence.InnerText = src.sequence.ToString();
 			lv1Main.AppendChild(lv2Sequence);
 
 			XmlElement lv3Position = xmlMovements.CreateElement("Pos");
