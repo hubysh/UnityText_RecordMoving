@@ -15,7 +15,7 @@ public class TestSingleton : MonoBehaviour
 		else
 		{
 			Singleton.Instance.txtResult.SetActive(isActive);
-			isActive = true;
+			isActive = true;	// 테스트용 주석
 		}
 		
 	}
