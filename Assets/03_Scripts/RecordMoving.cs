@@ -76,15 +76,15 @@ public class RecordMoving : MonoBehaviour
 		foreach (TxtObjectMovement src in Singleton.Instance.lstObjectMovement)
 		{
 			Debug.Log("foreach");
-			XmlElement lv2Sequence = xmlMovements.CreateElement("Sequence");
-			lv2Sequence.InnerText = src.sequence.ToString();
+			XmlElement lv2Sequence = xmlMovements.CreateElement("S" + src.sequence.ToString());
+			//lv2Sequence.InnerText = src.sequence.ToString();
 			lv1Main.AppendChild(lv2Sequence);
 
-			XmlElement lv3Position = xmlMovements.CreateElement("Position");
+			XmlElement lv3Position = xmlMovements.CreateElement("Pos");
 			lv3Position.InnerText = src.pos.ToString();
 			lv2Sequence.AppendChild(lv3Position);
 
-			XmlElement lv3Rotation = xmlMovements.CreateElement("Rotation");
+			XmlElement lv3Rotation = xmlMovements.CreateElement("Rot");
 			lv3Rotation.InnerText = src.rot.ToString();
 			lv2Sequence.AppendChild(lv3Rotation);
 		}
