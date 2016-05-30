@@ -94,7 +94,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22469750, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_LocalPosition.x
@@ -179,7 +179,7 @@ Prefab:
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 813722188}
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SendMessage
@@ -190,7 +190,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11423650, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: TestSingletonScript
+      value: StartRecording
       objectReference: {fileID: 0}
     - target: {fileID: 22464634, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
       propertyPath: m_RootOrder
@@ -395,6 +395,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b259b0c2b184b854fa8e8ad9b8b4c725, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &813722187 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 121804, guid: 004d95168958bc345bbfe012c183acb5, type: 2}
+  m_PrefabInternal: {fileID: 98107201}
+--- !u!114 &813722188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 813722187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa93b6e7e209f64bb0ce8dc1933d8bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &950087109 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22469750, guid: 004d95168958bc345bbfe012c183acb5,

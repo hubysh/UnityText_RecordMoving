@@ -1,15 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TxtObjectMovement : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+public struct TxtObjectMovement
+{
+	public int sequence;
+	public Vector3 pos;
+	public Quaternion rot;
 	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

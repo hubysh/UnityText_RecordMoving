@@ -4,10 +4,19 @@ using System.Collections;
 public class MoveObject : MonoBehaviour
 {
 
-	private bool moving = false;
+	public bool moving;
 
 	Vector3 pos;
 	Quaternion rot;
+
+	void Awake()
+	{
+		moving = false;
+
+		pos = new Vector3();
+		rot = new Quaternion();
+
+	}
 
 	void Update()
 	{
@@ -22,9 +31,14 @@ public class MoveObject : MonoBehaviour
 
 			rot.y += Time.deltaTime * 1f;
 			Singleton.Instance.txtObject.transform.rotation = rot;
+			Debug.Log("MoveObject");
 		}
 
-		Invoke("StopMoving", 3);
+		if(Singleton.Instance.txtObject.transform.position.y > 400.0f)
+		{
+			StopMoving();
+		}
+
 	}
 
 	void StopMoving()
